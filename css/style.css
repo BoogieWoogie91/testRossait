@@ -1,0 +1,355 @@
+body {
+  overflow-x: hidden;
+}
+
+.navbar-001 {
+  height: 675px;
+  background: #c4cdd6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.summonerOfSliders {
+  width: 250px;
+  height: 45px;
+  background: #ff891e;
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid #ff891e;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: all 300ms ease-in-out;
+  outline: none !important;
+  cursor: pointer;
+}
+
+.summonerOfSliders:hover {
+  background: transparent;
+  color: #000;
+  transition: all 300ms ease-in-out;
+}
+
+.summonerOfSliders:active {
+  background: #ff891e;
+  color: #fff;
+}
+
+.noExist {
+  position: absolute;
+  transition: all 300ms ease-in-out;
+}
+
+.carousel {
+  transform: translateX(100vw);
+  transition: all 300ms ease-in-out;
+}
+
+.slideIn {
+  transform: translateX(0vw);
+  transition: all 300ms ease-in-out;
+}
+
+.slideOut {
+  transform: translateX(-100vw);
+  transition: all 300ms ease-in-out;
+}
+
+.slideContent h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 42px;
+  color: #000;
+}
+
+.slideContent p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  color: #000;
+}
+
+.buttonBox button {
+  padding: 0 25px;
+  height: 40px;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none !important;
+  cursor: pointer;
+}
+
+.orange {
+  border: #ff891e 2px solid;
+  background: #ff891e;
+  color: #fff;
+  transition: all 300ms ease-in-out;
+}
+
+.orange:hover {
+  background: transparent;
+  color: #000;
+  transition: all 300ms ease-in-out;
+}
+
+.orange:active {
+  background: #ff891e;
+  color: #fff;
+  transition: all 100ms ease-in-out;
+}
+
+.transparent {
+  border: #000 2px solid;
+  background: transparent;
+  color: #000;
+  transition: all 300ms ease-in-out;
+  margin-left: 20px;
+}
+
+.transparent:hover {
+  background: #000;
+  color: #fff;
+  transition: all 300ms ease-in-out;
+}
+
+.transparent:active {
+  background: transparent;
+  color: #000;
+  transition: all 100ms ease-in-out;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.carousel {
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.slide_1 {
+  background: url(../img/slides/slider_1.jpg) no-repeat;
+}
+
+.slide_2 {
+  background: url(../img/slides/slider_2.jpg) no-repeat;
+}
+
+.slide_3 {
+  background: url(../img/slides/slider_3.jpg) no-repeat;
+}
+
+.slide_4 {
+  background: url(../img/slides/slider_4.jpg) no-repeat;
+}
+
+.slide {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+}
+
+.carousel-indicators li {
+  width: 100%;
+  height: auto;
+  text-indent: 0;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  max-width: 275px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.carousel-indicators .active {
+  background: rgba(0, 0, 0, 0.50);
+  transition: all 300ms ease-in-out;
+}
+
+.carousel-indicators li img {
+  border-radius: 5px;
+  margin: 5px 10px 5px 5px;
+  width: 45px;
+  height: 55px;
+}
+
+.indicatorText p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  color: #fff;
+  margin: 0;
+}
+
+.indicatorText p b {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #fff;
+}
+
+.carousel-control-next {
+  justify-content: flex-end;
+}
+
+.carousel-control-prev {
+  justify-content: flex-start;
+}
+
+.carousel-control-next-icon {
+  background: url(../img/arrowNext.png), rgba(0, 0, 0, 0.15);
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, cover;
+  background-position: center center, center center;
+  width: 76px;
+  height: 85px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.carousel-control-prev-icon {
+  background: url(../img/arrowPrev.png), rgba(0, 0, 0, 0.15);
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, cover;
+  background-position: center center, center center;
+  width: 76px;
+  height: 85px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+@media (min-width: 1171px) and (max-width: 1440px) {
+  .indicatorText p {
+    font-size: 0.78vw;
+  }
+
+  .indicatorText p b {
+    font-size: 0.8vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1170px) {
+  .slideContent h2 {
+    font-size: 35px;
+  }
+
+  .slideContent p {
+    font-size: 22px;
+  }
+
+  .navbar-001 button {
+    font-size: 13px;
+  }
+
+  .indicatorText p {
+    font-size: 0.78vw;
+  }
+
+  .indicatorText p b {
+    font-size: 0.8vw;
+  }
+
+  .carousel-indicators li img {
+    width: 39px;
+    height: 45px;
+  }
+
+  .carousel-indicators li {
+    margin: 0 7.5px;
+  }
+
+  .slide {
+    background-position: 40% center;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+  .navbar-001 {
+    height: 400px;
+  }
+
+  .slide_1 {
+    background: url(../img/mobileSlides/slider_1min.jpg) no-repeat;
+  }
+
+  .slide_2 {
+    background: url(../img/mobileSlides/slider_2min.jpg) no-repeat;
+  }
+
+  .slide_3 {
+    background: url(../img/mobileSlides/slider_3min.jpg) no-repeat;
+  }
+
+  .slide_4 {
+    background: url(../img/mobileSlides/slider_4min.jpg) no-repeat;
+  }
+
+  .slide {
+    background-position: center center;
+  }
+
+  .transparent {
+    display: none;
+  }
+
+  .indicatorText p {
+    display: none;
+  }
+
+  .indicatorText p b {
+    display: none;
+  }
+
+  .carousel-indicators li img {
+    display: none;
+  }
+
+  .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #282828;
+    background: transparent;
+  }
+
+  .carousel-indicators .active {
+    background: rgba(40, 40, 40, 1);
+    transition: all 300ms ease-in-out;
+  }
+
+  .carousel-control-next {
+    display: none;
+  }
+
+  .carousel-control-prev {
+    display: none;
+  }
+
+  .slideContent h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .slideContent p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .buttonBox {
+    display: flex;
+    justify-content: center;
+  }
+
+}
